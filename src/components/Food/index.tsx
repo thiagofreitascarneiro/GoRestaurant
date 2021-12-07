@@ -5,7 +5,7 @@ import { Container } from './styles';
 import api from '../../services/api';
 
 
-interface FoodData {
+export interface FoodData {
  
   id: number
   name: string
@@ -27,10 +27,6 @@ const Food = ({ food, handleDelete, handleEditFood }: FoodProps) => {
   const [isAvailable, setIsAvailable] = useState(food.available)
 
   const toggleAvailable = async () => {
-    //const { food } = this.props;
-    //setIsAvailable(isAvailable)
-   // const { isAvailable } = this.state;
-    //const isAvailable = true
 
     await api.put(`/foods/${food.id}`, {
       ...food,
@@ -45,7 +41,6 @@ const Food = ({ food, handleDelete, handleEditFood }: FoodProps) => {
     handleEditFood(food);
   }
 
-    //const { isAvailable } = this.state;
     
     return (
       <Container available={isAvailable}>
