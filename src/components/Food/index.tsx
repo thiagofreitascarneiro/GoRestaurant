@@ -40,9 +40,8 @@ const Food = ({ food, handleDelete, handleEditFood }: FoodProps) => {
     setIsAvailable(!isAvailable);
   }
 
-  const setEditingFood = () => {
-    const [ food, handleEditFood ] = useState();
-
+  function setEditingFood() {
+  
     handleEditFood(food);
   }
 
@@ -98,7 +97,7 @@ const Food = ({ food, handleDelete, handleEditFood }: FoodProps) => {
         </section>
       </Container>
     );
-  }
-};
+  };
+
 
 export default Food;
