@@ -1,6 +1,10 @@
 import { Component } from 'react';
 import ReactModal from 'react-modal';
 
+const Modal = ({ isOpen }) => {
+
+}
+const [modalStatus, setModalStatus] = useState()
 class Modal extends Component {
   constructor(props) {
     super(props);
