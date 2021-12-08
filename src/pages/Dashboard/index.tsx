@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, useState } from 'react';
 
 import Header from '../../components/Header';
 import api from '../../services/api';
@@ -7,26 +7,35 @@ import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
 
-/*interface DashboardValue {
+interface dashboardData {
 
 
-}*/
+}
 
-class Dashboard extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      foods: [],
-      editingFood: {},
-      modalOpen: false,
-      editModalOpen: false,
-    }
-  }
+const Dashboard = ({}: dashboardData) => {
 
-  async componentDidMount() {
+  const [foods, setFoods] = useState([])
+  const [editingFood, setEditingFood] = useState({})
+  const [modalOpen, setModalOpen] = useState(false)
+  const [editModalOpen, setEditModalOpen] = useState(false)
+
+
+//class Dashboard extends Component {
+  //constructor(props) {
+    //super(props);
+   // this.state = {
+    //  foods: [],
+      //editingFood: {},
+     // modalOpen: false,
+     // editModalOpen: false,
+    //}
+  //}
+
+
+  async function componentDidMount() {
     const response = await api.get('/foods');
 
-    this.setState({ foods: response.data });
+    return setState({ foods: response.data });
   }
 
   handleAddFood = async food => {
