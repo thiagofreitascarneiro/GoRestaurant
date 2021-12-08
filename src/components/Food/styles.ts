@@ -7,6 +7,7 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   background: #f0f0f5;
   border-radius: 8px;
+  
 
   header {
     background: #ffb84d;
@@ -25,6 +26,7 @@ export const Container = styled.div<ContainerProps>`
     img {
       pointer-events: none;
       user-select: none;
+      
     }
   }
 

@@ -20,17 +20,33 @@
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
       "name": "Moda da Casa",
       "price": "12.90",
-      "description": "Gorooba - tem de tudo",
+      "description": "Gororoba - tem de tudo",
       "available": true,
       "id": 4
     },
     {
-      "image": "",
-      "name": "",
-      "price": "",
-      "description": "",
+      "image": "gergrt",
+      "name": "dfgdf",
+      "price": "fdfgd",
+      "description": "fdgdf",
       "available": true,
       "id": 5
+    },
+    {
+      "image": "dfgdf",
+      "name": "dfgdf",
+      "price": "dfgd",
+      "description": "dfgdf",
+      "available": true,
+      "id": 6
+    },
+    {
+      "image": "sdfsd",
+      "name": "sfsd",
+      "price": "dfsdf",
+      "description": "dsfd",
+      "available": true,
+      "id": 7
     }
   ]
 }

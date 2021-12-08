@@ -17,7 +17,7 @@ interface FoodData {
 }
 
 interface dataModalEditFood {
-  food: FoodData;
+  food?: FoodData;
   isOpen: boolean;
   setIsOpen: () => void;
   handleUpdateFood: (food: FoodData) => void;

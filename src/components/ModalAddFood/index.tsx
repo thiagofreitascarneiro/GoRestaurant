@@ -16,7 +16,7 @@ export interface FoodData {
 
 }
 interface dataModalAddFood {
-  food: FoodData;
+  food?: FoodData;
   isOpen: boolean;
   setIsOpen: () => void;
   handleAddFood: (food: FoodData) => void;

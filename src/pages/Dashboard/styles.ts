@@ -6,8 +6,9 @@ export const FoodsContainer = styled.div`
   margin: 0 auto;
   padding: 40px 0;
   margin-top: -140px;
-
+  background-color: #eaff47;
   display: grid;
+  border-radius: 32px;
 
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
